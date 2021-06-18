@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import {
     Box,
     Toolbar,
@@ -6,6 +6,9 @@ import {
     Grid,
     Button
 } from '@material-ui/core'
+import { Link } from 'react-router-dom'
+
+import api from '../../services/api'
 
 import Header from '../../components/Header';
 import useStyles from './styles';
@@ -15,6 +18,22 @@ import splash from '../../assets/splash.png'
 
 function Home() {
     const classes = useStyles()
+
+    const [data, setData] = useState([])
+
+    useEffect(() => {
+        async function getRadios() {
+            try {
+                const response = await api.get(`/radios`);
+                console.log(response)
+                setData(response.data)
+            } catch (error) {
+                console.log(error);
+            }
+        }
+
+        getRadios()
+    }, [])
 
     return (
         <div className={classes.root}>
@@ -50,13 +69,13 @@ function Home() {
 
                     <Grid container spacing={3}>
                         {
-                            videos.map((item, index) => (
+                            data.map((item, index) => (
                                 <Grid item lg={3} md={4} sm={6} xs={12}>
                                     <Box>
                                         <img
                                             className={classes.card}
                                             alt={item.title}
-                                            src={item.thumb}
+                                            src={item.avatar}
                                         />
                                         <Box>
                                             <Typography
@@ -67,15 +86,9 @@ function Home() {
                                             >
                                                 {item.title}
                                             </Typography>
-                                            <Typography
-                                                display='block'
-                                                variant='body2'
-                                                color='textSecondary'
-                                            >
-                                                {item.channel}
-                                            </Typography>
+                                            
                                             <Typography variant='body2' color='textSecondary'>
-                                                {`${item.views} • ${item.date}`}
+                                                {`${item.views} • ${item.duration}`}
                                             </Typography>
                                         </Box>
                                     </Box>

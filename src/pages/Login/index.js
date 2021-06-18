@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
     CssBaseline,
     Avatar,
@@ -12,8 +12,9 @@ import {
     Grid,
     Typography
 } from '@material-ui/core';
-
 import LocalCafeIcon from '@material-ui/icons/LocalCafe';
+
+import api from '../../services/api'
 
 import useStyles from './styles';
 import Copyright from './Copyright';
@@ -22,6 +23,27 @@ import Copyright from './Copyright';
 
 function Login() {
     const classes = useStyles();
+
+    const [email, setEmail] = useState("")
+    const [password, setPassword] = useState("")
+
+    function handleEmailChange (value) {
+        setEmail(value.target.value)
+    }
+
+    function handlePasswordChange (value) {
+        setPassword(value.target.value)
+    }
+
+    async function getUser() {
+        try {
+          const response = await api.get(`/users?email=${email}`);
+
+          localStorage.setItem('@user', JSON.stringify(response))
+        } catch (error) {
+            console.log(error);
+        }
+      }
 
     return (
         <Grid container component="main" className={classes.root}>
@@ -48,6 +70,9 @@ function Login() {
                             name="email"
                             autoComplete="email"
                             autoFocus
+                            onChange={(value) => {
+                                handleEmailChange(value)
+                            }}
                         />
 
                         <TextField
@@ -60,6 +85,9 @@ function Login() {
                             type="password"
                             id="password"
                             autoComplete="current-password"
+                            onChange={(value) => {
+                                handlePasswordChange(value)
+                            }}
                         />
 
                         <FormControlLabel
@@ -73,6 +101,9 @@ function Login() {
                             variant="contained"
                             color="primary"
                             className={classes.submit}
+                            onClick={() => {
+                                getUser()
+                            }}
                         >
                             Sign In
                         </Button>

@@ -25,6 +25,7 @@ function DrawerMenu() {
 	const dispatch = useDispatch()
 	const visible = useSelector(state => state.drawer)
 
+    const user = JSON.parse(localStorage.getItem('@user'))
 
 	return (
 		<Drawer
@@ -39,7 +40,7 @@ function DrawerMenu() {
 			<Box className={classes.box}>
 				<Avatar
 					alt="Remy Sharp"
-					src={avatarDefault}
+					src={user.data[0].avatar}
 					className={classes.boxAvatar}
 				/>
 				<Typography
@@ -47,7 +48,7 @@ function DrawerMenu() {
 						root: classes.boxText
 					}}
 				>
-					New User
+					{user.data[0].name}
 				</Typography>
 			</Box>
 

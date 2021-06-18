@@ -1,8 +1,6 @@
 import { ThemeProvider, createMuiTheme } from '@material-ui/core';
 
-import Login from "./pages/Login";
-import Home from "./pages/Home";
-import Details from './pages/Details';
+import Routes from './routes';
 
 const theme = createMuiTheme({
   palette: {
@@ -23,7 +21,7 @@ const theme = createMuiTheme({
 function App() {
   return (
     <ThemeProvider theme={theme} >
-      <Details />
+      <Routes />
     </ThemeProvider>
   );
 }
