@@ -2,7 +2,7 @@ import { ThemeProvider, createMuiTheme } from '@material-ui/core';
 
 import Login from "./pages/Login";
 import Home from "./pages/Home";
-
+import Details from './pages/Details';
 
 const theme = createMuiTheme({
   palette: {
@@ -15,15 +15,15 @@ const theme = createMuiTheme({
     background: {
       default: '#fff',
       dark:  '#f4f6f8',
-      paper: '#fff'
+      paper: '#fdf5e6'
     }
-  }
+  },
 })
 
 function App() {
   return (
     <ThemeProvider theme={theme} >
-      <Home />
+      <Details />
     </ThemeProvider>
   );
 }
