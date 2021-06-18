@@ -1,0 +1,123 @@
+﻿{
+  "users": [
+    {
+      "id": 0,
+      "email": "admin",
+      "password": "admin",
+      "name": "Cool Raccoon",
+      "avatar": "https://i.ibb.co/k3SmHhY/default-Avatar.png"
+    }
+  ],
+  "radios": [
+    {
+      "id": 0,
+      "title": "ChillHop",
+      "duration": "3 hours",
+      "views": "14M+",
+      "description": "Lo-fi is the opposite of hi-fi. Historically, the prescriptions of 'lo-fi' have been relative to technological advances and the expectations of ordinary music listeners, causing the rhetoric and discourse surrounding the term to shift numerous times. Usually spelled as 'low-fi' before the 1990s, the term has existed since at least the 1950s, shortly after the acceptance of 'high fidelity', and its definition evolved continuously between the 1970s and 2000s. In the 1976 edition of the Oxford English Dictionary, lo-fi was added under the definition of 'sound production less good in quality than 'hi-fi''. Music educator R. Murray Schafer, in the glossary for his 1977 book The Tuning of the World, defined the term as 'unfavourable signal-to-noise ratio.'",
+      "channel": "https://www.youtube.com/watch?v=7NOSDKb0HlU",
+      "avatar": "https://assets.audiomack.com/chillhopmusic/cc6e6e7b5cb46cb0f5d64b81c655630eec51904ba098e4b103f50f7006a5c8bf.jpeg"
+    },
+    {
+      "id": 1,
+      "title": "Lo-fi Girl",
+      "duration": "2 hours",
+      "views": "200M+",
+      "description": "Lo-fi is the opposite of hi-fi. Historically, the prescriptions of 'lo-fi' have been relative to technological advances and the expectations of ordinary music listeners, causing the rhetoric and discourse surrounding the term to shift numerous times. Usually spelled as 'low-fi' before the 1990s, the term has existed since at least the 1950s, shortly after the acceptance of 'high fidelity', and its definition evolved continuously between the 1970s and 2000s. In the 1976 edition of the Oxford English Dictionary, lo-fi was added under the definition of 'sound production less good in quality than 'hi-fi''. Music educator R. Murray Schafer, in the glossary for his 1977 book The Tuning of the World, defined the term as 'unfavourable signal-to-noise ratio.'",
+      "channel": "https://www.youtube.com/watch?v=5qap5aO4i9A",
+      "avatar": "https://i.ibb.co/8zZVykP/Lo-fi-girl.png"
+    },
+    {
+      "id": 2,
+      "title": "Lo-fi for Ghosts (Only)",
+      "duration": "1 hour",
+      "views": "7,5M+",
+      "description": "Lo-fi is the opposite of hi-fi. Historically, the prescriptions of 'lo-fi' have been relative to technological advances and the expectations of ordinary music listeners, causing the rhetoric and discourse surrounding the term to shift numerous times. Usually spelled as 'low-fi' before the 1990s, the term has existed since at least the 1950s, shortly after the acceptance of 'high fidelity', and its definition evolved continuously between the 1970s and 2000s. In the 1976 edition of the Oxford English Dictionary, lo-fi was added under the definition of 'sound production less good in quality than 'hi-fi''. Music educator R. Murray Schafer, in the glossary for his 1977 book The Tuning of the World, defined the term as 'unfavourable signal-to-noise ratio.'",
+      "channel": "https://www.youtube.com/watch?v=2GjPQfdQfMY",
+      "avatar": "https://i.ibb.co/Hq6s7Fc/Ghosts-Only.png"
+    },
+    {
+      "id": 3,
+      "title": "HIBIKI",
+      "duration": "1 hour",
+      "views": "1,2M+",
+      "description": "Lo-fi is the opposite of hi-fi. Historically, the prescriptions of 'lo-fi' have been relative to technological advances and the expectations of ordinary music listeners, causing the rhetoric and discourse surrounding the term to shift numerous times. Usually spelled as 'low-fi' before the 1990s, the term has existed since at least the 1950s, shortly after the acceptance of 'high fidelity', and its definition evolved continuously between the 1970s and 2000s. In the 1976 edition of the Oxford English Dictionary, lo-fi was added under the definition of 'sound production less good in quality than 'hi-fi''. Music educator R. Murray Schafer, in the glossary for his 1977 book The Tuning of the World, defined the term as 'unfavourable signal-to-noise ratio.'",
+      "channel": "https://www.youtube.com/watch?v=S2Eq7vNWyfA&t=3037s",
+      "avatar": "https://cdna.artstation.com/p/assets/images/images/033/222/996/large/tristan-yajuu-bour-maskportrait.jpg?1608806190"
+    },
+    {
+      "id": 4,
+      "title": "Japanese Beats",
+      "duration": "3,5 hours",
+      "views": "70M+",
+      "description": "Lo-fi is the opposite of hi-fi. Historically, the prescriptions of 'lo-fi' have been relative to technological advances and the expectations of ordinary music listeners, causing the rhetoric and discourse surrounding the term to shift numerous times. Usually spelled as 'low-fi' before the 1990s, the term has existed since at least the 1950s, shortly after the acceptance of 'high fidelity', and its definition evolved continuously between the 1970s and 2000s. In the 1976 edition of the Oxford English Dictionary, lo-fi was added under the definition of 'sound production less good in quality than 'hi-fi''. Music educator R. Murray Schafer, in the glossary for his 1977 book The Tuning of the World, defined the term as 'unfavourable signal-to-noise ratio.'",
+      "channel": "https://www.youtube.com/watch?v=b-EF93ebtyM",
+      "avatar": "https://i.ibb.co/zF5Gncn/Samurai.png"
+    },
+    {
+      "id": 5,
+      "title": "The Jazz Hop Cafe",
+      "duration": "2,5 hours",
+      "views": "500k+",
+      "description": "Lo-fi is the opposite of hi-fi. Historically, the prescriptions of 'lo-fi' have been relative to technological advances and the expectations of ordinary music listeners, causing the rhetoric and discourse surrounding the term to shift numerous times. Usually spelled as 'low-fi' before the 1990s, the term has existed since at least the 1950s, shortly after the acceptance of 'high fidelity', and its definition evolved continuously between the 1970s and 2000s. In the 1976 edition of the Oxford English Dictionary, lo-fi was added under the definition of 'sound production less good in quality than 'hi-fi''. Music educator R. Murray Schafer, in the glossary for his 1977 book The Tuning of the World, defined the term as 'unfavourable signal-to-noise ratio.'",
+      "channel": "https://www.youtube.com/watch?v=wnyCpRmDfs0",
+      "avatar": "https://i.ibb.co/717CVZZ/the-jazz-coffe.png"
+    },
+    {
+      "id": 6,
+      "title": "3 AM Coding Session",
+      "duration": "1 hour",
+      "views": "600k+",
+      "description": "Lo-fi is the opposite of hi-fi. Historically, the prescriptions of 'lo-fi' have been relative to technological advances and the expectations of ordinary music listeners, causing the rhetoric and discourse surrounding the term to shift numerous times. Usually spelled as 'low-fi' before the 1990s, the term has existed since at least the 1950s, shortly after the acceptance of 'high fidelity', and its definition evolved continuously between the 1970s and 2000s. In the 1976 edition of the Oxford English Dictionary, lo-fi was added under the definition of 'sound production less good in quality than 'hi-fi''. Music educator R. Murray Schafer, in the glossary for his 1977 book The Tuning of the World, defined the term as 'unfavourable signal-to-noise ratio.'",
+      "channel": "https://www.youtube.com/watch?v=_ITiwPMUzho&t=832s",
+      "avatar": "https://i.ibb.co/TrD1nVL/code-seasson.png"
+    },
+    {
+      "id": 7,
+      "title": "Brazil - Lofi",
+      "duration": "1 hour",
+      "views": "5,2M+",
+      "description": "Lo-fi is the opposite of hi-fi. Historically, the prescriptions of 'lo-fi' have been relative to technological advances and the expectations of ordinary music listeners, causing the rhetoric and discourse surrounding the term to shift numerous times. Usually spelled as 'low-fi' before the 1990s, the term has existed since at least the 1950s, shortly after the acceptance of 'high fidelity', and its definition evolved continuously between the 1970s and 2000s. In the 1976 edition of the Oxford English Dictionary, lo-fi was added under the definition of 'sound production less good in quality than 'hi-fi''. Music educator R. Murray Schafer, in the glossary for his 1977 book The Tuning of the World, defined the term as 'unfavourable signal-to-noise ratio.'",
+      "channel": "https://www.youtube.com/watch?v=ZhstyJSNKME&t=19s",
+      "avatar": "https://i.ibb.co/HYMQgD6/Brazil-lofi.png"
+    }
+  ],
+  "highlights": [
+    {
+      "id": 0,
+      "title": "ChillHop",
+      "duration": "3 hours",
+      "views": "14M+",
+      "description": "Lo-fi is the opposite of hi-fi. Historically, the prescriptions of 'lo-fi' have been relative to technological advances and the expectations of ordinary music listeners, causing the rhetoric and discourse surrounding the term to shift numerous times. Usually spelled as 'low-fi' before the 1990s, the term has existed since at least the 1950s, shortly after the acceptance of 'high fidelity', and its definition evolved continuously between the 1970s and 2000s. In the 1976 edition of the Oxford English Dictionary, lo-fi was added under the definition of 'sound production less good in quality than 'hi-fi''. Music educator R. Murray Schafer, in the glossary for his 1977 book The Tuning of the World, defined the term as 'unfavourable signal-to-noise ratio.'",
+      "channel": "https://www.youtube.com/watch?v=7NOSDKb0HlU",
+      "avatar": "https://assets.audiomack.com/chillhopmusic/cc6e6e7b5cb46cb0f5d64b81c655630eec51904ba098e4b103f50f7006a5c8bf.jpeg"
+    },
+    {
+      "id": 1,
+      "title": "Lo-fi Girl",
+      "duration": "2 hours",
+      "views": "200M+",
+      "description": "Lo-fi is the opposite of hi-fi. Historically, the prescriptions of 'lo-fi' have been relative to technological advances and the expectations of ordinary music listeners, causing the rhetoric and discourse surrounding the term to shift numerous times. Usually spelled as 'low-fi' before the 1990s, the term has existed since at least the 1950s, shortly after the acceptance of 'high fidelity', and its definition evolved continuously between the 1970s and 2000s. In the 1976 edition of the Oxford English Dictionary, lo-fi was added under the definition of 'sound production less good in quality than 'hi-fi''. Music educator R. Murray Schafer, in the glossary for his 1977 book The Tuning of the World, defined the term as 'unfavourable signal-to-noise ratio.'",
+      "channel": "https://www.youtube.com/watch?v=5qap5aO4i9A",
+      "avatar": "https://i.ibb.co/8zZVykP/Lo-fi-girl.png"
+    },
+    {
+      "id": 2,
+      "title": "Lo-fi for Ghosts (Only)",
+      "duration": "1 hour",
+      "views": "7,5M+",
+      "description": "Lo-fi is the opposite of hi-fi. Historically, the prescriptions of 'lo-fi' have been relative to technological advances and the expectations of ordinary music listeners, causing the rhetoric and discourse surrounding the term to shift numerous times. Usually spelled as 'low-fi' before the 1990s, the term has existed since at least the 1950s, shortly after the acceptance of 'high fidelity', and its definition evolved continuously between the 1970s and 2000s. In the 1976 edition of the Oxford English Dictionary, lo-fi was added under the definition of 'sound production less good in quality than 'hi-fi''. Music educator R. Murray Schafer, in the glossary for his 1977 book The Tuning of the World, defined the term as 'unfavourable signal-to-noise ratio.'",
+      "channel": "https://www.youtube.com/watch?v=2GjPQfdQfMY",
+      "avatar": "https://i.ibb.co/Hq6s7Fc/Ghosts-Only.png"
+    },
+    {
+      "id": 3,
+      "title": "HIBIKI",
+      "duration": "1 hour",
+      "views": "1,2M+",
+      "description": "Lo-fi is the opposite of hi-fi. Historically, the prescriptions of 'lo-fi' have been relative to technological advances and the expectations of ordinary music listeners, causing the rhetoric and discourse surrounding the term to shift numerous times. Usually spelled as 'low-fi' before the 1990s, the term has existed since at least the 1950s, shortly after the acceptance of 'high fidelity', and its definition evolved continuously between the 1970s and 2000s. In the 1976 edition of the Oxford English Dictionary, lo-fi was added under the definition of 'sound production less good in quality than 'hi-fi''. Music educator R. Murray Schafer, in the glossary for his 1977 book The Tuning of the World, defined the term as 'unfavourable signal-to-noise ratio.'",
+      "channel": "https://www.youtube.com/watch?v=S2Eq7vNWyfA&t=3037s",
+      "avatar": "https://cdna.artstation.com/p/assets/images/images/033/222/996/large/tristan-yajuu-bour-maskportrait.jpg?1608806190"
+    }
+  ]
+}
