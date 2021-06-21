@@ -1,11 +1,11 @@
-﻿{
+{
   "users": [
     {
-      "id": 0,
+      "avatar": "https://i.ibb.co/k3SmHhY/default-Avatar.png",
+      "name": "Raccoon",
       "email": "admin",
       "password": "admin",
-      "name": "Cool Raccoon",
-      "avatar": "https://i.ibb.co/k3SmHhY/default-Avatar.png"
+      "id": 0
     }
   ],
   "radios": [

@@ -25,7 +25,12 @@ function DrawerMenu() {
 	const dispatch = useDispatch()
 	const visible = useSelector(state => state.drawer)
 
-    const user = JSON.parse(localStorage.getItem('@user'))
+	const user = JSON.parse(localStorage.getItem('@user'))
+
+	const loggout = () => {
+		localStorage.clear()
+		window.location.reload()
+	}
 
 	return (
 		<Drawer
@@ -39,7 +44,7 @@ function DrawerMenu() {
 
 			<Box className={classes.box}>
 				<Avatar
-					alt="Remy Sharp"
+					alt="user avatar"
 					src={user.data[0].avatar}
 					className={classes.boxAvatar}
 				/>
@@ -68,7 +73,13 @@ function DrawerMenu() {
 					))}
 				</List>
 
-				<Button variant="outlined" className={classes.button}>
+				<Button
+					variant="outlined"
+					className={classes.button}
+					onClick={() => {
+						loggout()
+					}}
+				>
 					Exit
 				</Button>
 			</Box>

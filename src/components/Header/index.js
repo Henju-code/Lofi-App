@@ -3,7 +3,7 @@ import {
     AppBar,
     Toolbar,
     Avatar,
-    IconButton 
+    IconButton
 } from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu';
 import { useDispatch } from 'react-redux';
@@ -26,10 +26,10 @@ function Header() {
             <DrawerMenu />
             <AppBar position="static">
                 <Toolbar>
-                    <IconButton 
-                        edge="start" 
-                        className={classes.menuButton} 
-                        color="secondary" 
+                    <IconButton
+                        edge="start"
+                        className={classes.menuButton}
+                        color="secondary"
                         aria-label="menu"
                         onClick={() => {
                             dispatch(show())
@@ -37,28 +37,25 @@ function Header() {
                     >
                         <MenuIcon />
                     </IconButton>
-                    
-                    <div className={classes.grow} /> 
 
-                    
-                    <Link to="/">
+                    <div className={classes.grow} />
+
+
+                    <Link to="/" style={{ textDecoration: 'none' }}>
                         <ButtonBar>Home</ButtonBar>
                     </Link>
-                    <Link to="/profile">
-                        <ButtonBar>Profile</ButtonBar>
-                    </Link>
-
-                    <Link to="/details">
-                        <ButtonBar>Collections</ButtonBar>
-                    </Link>
+                    
+                    <ButtonBar>Collections</ButtonBar>
 
                     <ButtonBar>About us</ButtonBar>
 
-                    <Avatar 
-                        alt="avatar" 
+                    <Link to="/profile">                   
+                    <Avatar
+                        alt="avatar"
                         src={user.data[0].avatar}
                         className={classes.avatar}
                     />
+                    </Link>
                 </Toolbar>
             </AppBar>
         </div>

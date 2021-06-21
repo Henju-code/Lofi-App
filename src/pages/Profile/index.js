@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Avatar from '@material-ui/core/Avatar';
 import Button from '@material-ui/core/Button';
 import CssBaseline from '@material-ui/core/CssBaseline';
@@ -12,6 +12,8 @@ import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
+
+import api from '../../services/api'
 
 import Header from '../../components/Header'
 
@@ -29,6 +31,10 @@ function Copyright() {
 }
 
 const useStyles = makeStyles((theme) => ({
+    container: {
+        height: '100vh',
+        backgroundColor: theme.palette.background.paper
+    },
     paper: {
         marginTop: theme.spacing(8),
         display: 'flex',
@@ -56,8 +62,35 @@ export default function Profile() {
 
     const user = JSON.parse(localStorage.getItem('@user'))
 
+    const [userName, setUserName] = useState(user.data[0].name)
+    const [userEmail, setUserEmail] = useState(user.data[0].email)
+    const [userPassword, setUserPassword] = useState(user.data[0].password)
+
+
+    async function updateUserData() {
+        try {
+            const data= {
+                avatar: `${user.data[0].avatar}`,
+                name: `${userName}`,
+                email: `${userEmail}`,
+                password: `${userPassword}`
+            }
+            const putResponse = api.put(`http://192.168.0.102:3333/users/${user.data[0].id}`, data)
+
+            const getResponse = await api.get(`/users?email=${userEmail}`);
+
+            if (getResponse.data) {
+                localStorage.setItem('@user', JSON.stringify(getResponse))
+            } else {
+                localStorage.clear()
+            }
+        } catch (error) {
+            console.log(error);
+        }
+    }
+
     return (
-        <>
+        <div className={classes.container}>
             <Header />
             <Container component="main" maxWidth="xs">
                 <CssBaseline />
@@ -72,17 +105,8 @@ export default function Profile() {
                     <Typography component="h1" variant="h4">
                         Update User Profile
                     </Typography>
+
                     <form className={classes.form} noValidate>
-                        <TextField
-                            variant="outlined"
-                            margin="normal"
-                            required
-                            fullWidth
-                            id="avatar"
-                            label="Avatar Link"
-                            name="avatar"
-                            autoFocus
-                        />
                         <TextField
                             variant="outlined"
                             margin="normal"
@@ -92,7 +116,9 @@ export default function Profile() {
                             label="Your name"
                             name="name"
                             autoComplete="name"
-                            autoFocus
+                            onChange={(value) => {
+                                setUserName(value.target.value)
+                            }}
                         />
                         <TextField
                             variant="outlined"
@@ -103,7 +129,9 @@ export default function Profile() {
                             label="Email Address"
                             name="email"
                             autoComplete="email"
-                            autoFocus
+                            onChange={(value) => {
+                                setUserEmail(value.target.value)
+                            }}
                         />
                         <TextField
                             variant="outlined"
@@ -115,6 +143,9 @@ export default function Profile() {
                             type="password"
                             id="password"
                             autoComplete="current-password"
+                            onChange={(value) => {
+                                setUserPassword(value.target.value)
+                            }}
                         />
 
                         <Button
@@ -123,6 +154,9 @@ export default function Profile() {
                             variant="contained"
                             color="primary"
                             className={classes.submit}
+                            onClick={() => {
+                                updateUserData()
+                            }}
                         >
                             Save
                         </Button>
@@ -132,6 +166,6 @@ export default function Profile() {
                     <Copyright />
                 </Box>
             </Container>
-        </>
+        </div>
     );
 }

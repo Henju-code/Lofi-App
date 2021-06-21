@@ -1,7 +1,7 @@
 import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
-    root: {
+    container: {
         display: 'flex',
         flexDirection: 'column',
         backgroundColor: '#fdf5e6'
@@ -22,8 +22,8 @@ const useStyles = makeStyles((theme) => ({
     },
     card: {
         width: 300,
-        height: 300, 
-        borderRadius: 7 
+        height: 300,
+        borderRadius: 7
     },
     showMoreButton: {
         display: 'flex',

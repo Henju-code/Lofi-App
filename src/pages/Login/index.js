@@ -27,23 +27,27 @@ function Login() {
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
 
-    function handleEmailChange (value) {
+    function handleEmailChange(value) {
         setEmail(value.target.value)
     }
 
-    function handlePasswordChange (value) {
+    function handlePasswordChange(value) {
         setPassword(value.target.value)
     }
 
-    async function getUser() {
+    const getUser = async () => {
         try {
-          const response = await api.get(`/users?email=${email}`);
+            const response = await api.get(`/users?email=${email}`);
 
-          localStorage.setItem('@user', JSON.stringify(response))
+            if (response.data) {
+                localStorage.setItem('@user', JSON.stringify(response))
+            } else {
+                localStorage.clear()
+            }
         } catch (error) {
             console.log(error);
         }
-      }
+    }
 
     return (
         <Grid container component="main" className={classes.root}>
@@ -101,9 +105,7 @@ function Login() {
                             variant="contained"
                             color="primary"
                             className={classes.submit}
-                            onClick={() => {
-                                getUser()
-                            }}
+                            onClick={() => getUser()}
                         >
                             Sign In
                         </Button>
