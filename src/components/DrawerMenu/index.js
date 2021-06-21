@@ -14,7 +14,6 @@ import { useSelector, useDispatch } from 'react-redux'
 
 import { hide } from '../../store/Drawer/Drawer.actions'
 import useStyles from './styles'
-import avatarDefault from '../../assets/defaultAvatar.png'
 import waves from '../../assets/waves.png'
 
 const drawerMenuOptions = ['Profile', 'My Collections', 'Settings', 'Support']

@@ -1,0 +1,4 @@
+export default{
+    LOAD_RADIOS_SAGA: "LOAD_RADIOS_SAGA",
+    SET_RADIOS: "SET_RADIOS"
+}

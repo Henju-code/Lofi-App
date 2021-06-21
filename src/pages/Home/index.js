@@ -7,17 +7,20 @@ import {
     Button
 } from '@material-ui/core'
 import { Link } from 'react-router-dom'
+//import { useDispatch, useSelector } from 'react-redux';
 
 import api from '../../services/api'
+//import { loadRadios } from '../../store/LofiRadios/LofiRadios.actions'
+//import type from '../../store/types'
 
 import Header from '../../components/Header';
 import useStyles from './styles';
-
 import waves from '../../assets/waves.png'
 import splash from '../../assets/splash.png'
 
 function Home() {
     const classes = useStyles()
+    //const dispatch = useDispatch();
 
     const [data, setData] = useState([])
 
@@ -33,6 +36,8 @@ function Home() {
         }
 
         getRadios()
+
+        // dispatch(loadRadios('/radios'))        
     }, [])
 
     return (

@@ -1,32 +1,45 @@
-import api from '../../services/api'
+// import api from '../../services/api'
+// import type from '../types'
 
-export default function (state = {}, action) {
-    switch (action.type) {
-        case 'SAVE_USER_DATA':
-            return async () => {
-                try {
-                    const response = await api.get(`/users?email=${action, payload}`);
+// const STATE = {
+//     recomended: {}
+// }
 
-                    if (response.data) {
-                        localStorage.setItem('@user', JSON.stringify(response))
-                    } else {
-                        localStorage.clear()
-                    }
-                } catch (error) {
-                    console.log(error);
-                }
-            }
+// export default function (state = STATE, action) {
+//     switch (action.type) {
+//         case type.SAVE_USER:
+//             return {
+//                 user: action.payload,
+//                 isAuthorized: true
+//             }
 
-        case 'GET_USER_DATA':
-            return JSON.parse(localStorage.getItem('@user'))
+//         case type.GET_USER:
+//             return STATE
 
-        case 'DELETE_USER_DATA':
-            return () => {
-                localStorage.clear()
-                window.location.reload()
-            }
+//         case type.DELETE_USER:
+//             return 
 
-        default:
-            return state
-    }
-}
+//         default:
+//             return state
+//     }
+// }
+
+
+// // async () => {
+// //     try {
+// //         const response = await api.get(`/users?email=${action, payload}`);
+
+// //         if (response.data) {
+// //             localStorage.setItem('@user', JSON.stringify(response))
+// //         } else {
+// //             localStorage.clear()
+// //         }
+// //     } catch (error) {
+// //         console.log(error);
+// //     }
+// // }
+
+// // JSON.parse(localStorage.getItem('@user'))
+
+// // localStorage.clear()
+// // window.location.reload()
